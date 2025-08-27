@@ -5,7 +5,8 @@ This is what my POE Part 1 should be like
 Site Map
 
 Homepage 
-|
+|<img width="752" height="742" alt="Sitemap for Ubuntu Center" src="https://github.com/user-attachments/assets/c7c21cf9-2097-462e-acaf-5dde083d9f67" />
+
 ├── About Us
 │   ├── Our Story
 │   ├── Our Team
