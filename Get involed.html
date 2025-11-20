@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Involved - Ubuntu Rise Community Hub</title>
     <!-- This is how you link the Html and CSS pages together--->
-    <link href="style.css" rel="stylesheet "/>
+     <link href="style.css" rel="stylesheet "/>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="script.js"></script>
+
+     <!-- SEO Meta Tags -->
+     <meta name="description" content="Join Ubuntu Rise through volunteering, donations, or partnerships. Make a difference in Pietermaritzburg's community. All donations are tax-deductible.">
+     <meta name="keywords" content="volunteer opportunities, donate, community partnership, Pietermaritzburg volunteer, nonprofit donation">
+     <meta name="author" content="Ubuntu Rise Community Hub">
+
+     <!-- Open Graph Meta Tags -->
+     <meta property="og:title" content="Ubuntu Rise Community Hub">
+     <meta property="og:description" content="Our humanity is bound up in each other. We rise together.">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://ubunturise.org.za">
+
+     <!-- Leaflet CSS for Maps -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
 </head>
 <body>
     <header>
@@ -27,100 +45,151 @@
 
     <section>
         <div>
-            <h1>Get Involved</h1>
+            <h2>Get Involved</h2>
             <p>Join us in making a difference in our community through various ways to contribute.</p>
         </div>
     </section>
 
-    <section id="volunteer">
-        <div>
-            <h2>Volunteer Opportunities</h2>
-            <p>We welcome community-minded individuals looking to contribute their time and skills to our cause.</p>
-            
-            <h3>Current Volunteer Needs:</h3>
-            <ul>
-                <li>Companions for elderly participants</li>
-                <li>Assistance with transportation to medical appointments</li>
-                <li>Help with minor home repairs and gardening</li>
-                <li>Workshop facilitators for various skills</li>
-                <li>Administrative support</li>
-                <li>Event coordination assistance</li>
-            </ul>
-            
-            <p>To apply as a volunteer, (Will be added soon).</p>
+ 
+    <section id="volunteer" class="section-padding">
+        <div class="container">
+            <div class="program-card">
+                <h2>Volunteer Opportunities</h2>
+                <p>We welcome community-minded individuals looking to contribute their time and skills to our cause.</p>
+                
+                <h3>Current Volunteer Needs:</h3>
+                <ul>
+                    <li>Companions for elderly participants</li>
+                    <li>Assistance with transportation to medical appointments</li>
+                    <li>Help with minor home repairs and gardening</li>
+                    <li>Workshop facilitators for various skills</li>
+                    <li>Administrative support</li>
+                    <li>Event coordination assistance</li>
+                </ul>
+                
+                <p>To apply as a volunteer, please fill out our volunteer application form or contact us directly.</p>
+                <a href="Contact Us.html" class="btn">Contact Us About Volunteering</a>
+            </div>
         </div>
     </section>
 
-    <section id="donate">
-        <div>
-            <h2>Make a Donation</h2>
-            <p>Your financial support helps us continue our vital programs and expand our reach in the community.</p>
-            
-            <h3>Ways to Donate:</h3>
-            <ul>
-                <li>One-time financial donation</li>
-                <li>Monthly sustaining donation</li>
-                <li>Sponsor a specific program</li>
-                <li>In-kind donations of goods or services</li>
-            </ul>
-            
-            <p>All donations are tax-deductible, and we provide receipts for your records(this Will also be added soon).</p>
+    <section id="donate" class="section-padding">
+        <div class="container">
+            <div class="program-card">
+                <h2>Make a Donation</h2>
+                <p>Your financial support helps us continue our vital programs and expand our reach in the community.</p>
+                
+                <h3>Ways to Donate:</h3>
+                <ul>
+                    <li>One-time financial donation</li>
+                    <li>Monthly sustaining donation</li>
+                    <li>Sponsor a specific program</li>
+                    <li>In-kind donations of goods or services</li>
+                </ul>
+                
+                <p>All donations are tax-deductible, and we provide receipts for your records.</p>
+            </div>
         </div>
     </section>
 
-    <section id="partnership">
-        <div>
-            <h2>Corporate Partnerships</h2>
-            <p>We welcome partnerships with businesses and organizations that want to make a meaningful impact in our community.</p>
-            
-            <h3>Partnership Benefits:</h3>
-            <ul>
-                <li>Employee volunteer opportunities</li>
-                <li>Corporate social responsibility recognition</li>
-                <li>Team-building activities with purpose</li>
-                <li>Positive brand association with community service</li>
-            </ul>
+    <section id="partnership" class="section-padding">
+        <div class="container">
+            <div class="program-card">
+                <h2>Corporate Partnerships</h2>
+                <p>We welcome partnerships with businesses and organizations that want to make a meaningful impact in our community.</p>
+                
+                <h3>Partnership Benefits:</h3>
+                <ul>
+                    <li>Employee volunteer opportunities</li>
+                    <li>Corporate social responsibility recognition</li>
+                    <li>Team-building activities with purpose</li>
+                    <li>Positive brand association with community service</li>
+                </ul>
+                
+                <p>Contact us to discuss partnership opportunities tailored to your organization's goals.</p>
+                <a href="Contact Us.html" class="btn">Explore Partnership</a>
+            </div>
+        </div>
+    </section>
+
             
             <p>Contact us to discuss partnership opportunities tailored to your organization's goals.</p>
-            <a href="contact.html">Explore Partnership</a>
+            <!-- <a href="contact.html">Explore Partnership</a> -->
         </div>
     </section>
 
-    <section id="donation-form">
-        <div>
-            <h2>Donation Form</h2>
-            <form>
-                <div>
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div>
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div>
-                    <label for="amount">Donation Amount (ZAR)</label>
-                    <input type="number" id="amount" name="amount" min="1" required>
-                </div>
-                
-                <div>
-                    <label>Donation Type</label>
-                    <div>
-                        <input type="radio" id="one-time" name="donation-type" value="one-time" checked>
-                        <label for="one-time">One-time</label>
+   
+<section id="donation-form">
+    <div class="container">
+        <h2>Donation Form</h2>
+        <p>Your generous donation helps us continue our vital community programs. Every contribution makes a difference.</p>
+        
+        <form id="donationForm" class="donation-form">
+            <div class="form-group">
+                <label for="donor-name">Full Name <span style="color: var(--danger);">*</span></label>
+                <input type="text" id="donor-name" name="name" required placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="donor-email">Email Address <span style="color: var(--danger);">*</span></label>
+                <input type="email" id="donor-email" name="email" required placeholder="your.email@example.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="donor-phone">Phone Number</label>
+                <input type="tel" id="donor-phone" name="phone" placeholder="0800 123 4567">
+            </div>
+            
+            <div class="form-group">
+                <label for="amount">Donation Amount (ZAR) <span style="color: var(--danger);">*</span></label>
+                <input type="number" id="amount" name="amount" min="1" required placeholder="Enter amount">
+            </div>
+            
+            <div class="form-group">
+                <label>Donation Type <span style="color: var(--danger);">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="one-time" name="donation-type" value="one-time" checked required>
+                        <label for="one-time">One-time Donation</label>
                     </div>
-                    <div>
-                        <input type="radio" id="monthly" name="donation-type" value="monthly">
-                        <label for="monthly">Monthly</label>
+                    <div class="radio-option">
+                        <input type="radio" id="monthly" name="donation-type" value="monthly" required>
+                        <label for="monthly">Monthly Recurring</label>
                     </div>
                 </div>
-                
-                <button type="submit">Donate Now</button>
-            </form>
-        </div>
-    </section>
+            </div>
+            
+            <div class="form-group">
+                <label for="program-support">Support Specific Program (Optional)</label>
+                <select id="program-support" name="program">
+                    <option value="">General Fund</option>
+                    <option value="golden-years">Golden Years - Senior Program</option>
+                    <option value="safe-harbour">Safe Harbour - Abuse Support</option>
+                    <option value="pathfinders">Pathfinders - Life Skills</option>
+                    <option value="operations">General Operations</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="donation-message">Message (Optional)</label>
+                <textarea id="donation-message" name="message" placeholder="Leave a message of support..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label style="display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" required style="width: auto;">
+                    <span>I agree to the terms and conditions <span style="color: var(--danger);">*</span></span>
+                </label>
+            </div>
+            
+            <button type="submit" class="btn">Donate Now</button>
+            
+            <p style="margin-top: 20px; font-size: 0.9rem; color: var(--gray);">
+                <strong>Note:</strong> All donations are tax-deductible. You will receive a receipt via email for your records.
+            </p>
+        </form>
+    </div>
+</section>
 
     <footer>
              <div>
@@ -141,3 +210,8 @@
     </footer>
 </body>
 </html>
+
+
+
+
+    

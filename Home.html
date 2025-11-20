@@ -6,7 +6,25 @@
     <title>Ubuntu Rise Community Hub - Home</title>
     <meta name="description" content="Ubuntu Rise Community Centre - Our humanity is bound up in each other. We rise together.">
     <!-- This is how you link the Html and CSS pages together--->
-    <link href="style.css" rel="stylesheet "/>
+     <link href="style.css" rel="stylesheet "/>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="script.js"></script>
+
+     <!-- SEO Meta Tags -->
+     <meta name="description" content="Welcome to Ubuntu Rise Community Hub in Pietermaritzburg. We provide support for seniors, abuse survivors, and life skills development through our Golden Years, Safe Harbour, and Pathfinders programs.">
+     <meta name="keywords" content="Ubuntu Rise, community hub, Pietermaritzburg, Gift of Givers, community support, South Africa">
+     <meta name="author" content="Ubuntu Rise Community Hub">
+
+     <!-- Open Graph Meta Tags -->
+     <meta property="og:title" content="Ubuntu Rise Community Hub">
+     <meta property="og:description" content="Our humanity is bound up in each other. We rise together.">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://ubunturise.org.za">
+
+     <!-- Leaflet CSS for Maps -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
 </head>
 <body>
     <!-- Header with navigation  I am very happy starting this center (Hub) -->
@@ -22,8 +40,6 @@
                         <li><a href="Get involed.html">Get Involved</a></li>
                         <li><a href="Contact Us.html">Contact Us</a></li>
                      </ol>
-
-                
             </nav> 
         </div>
     </header>
@@ -34,15 +50,13 @@
         <div>
             <section class="hero">
             <p>Building a resilient community where no one is left behind, and everyone can rise and thrive together.</p>
-            <img src= "Ubuntu Centre (WEDE Project)/3 . Assets/Images/My Logo pic/Ubuntu rise (1).jpg" alt="Company logo" height="500" width="500" />
+            <img src= "Ubuntu Centre (WEDE Project)/3 . Assets/Images/My Logo pic/Ubuntu rise (1).jpg" alt="Ubuntu Rise Community Hub logo showing the spirit of Ubuntu and community togetherness in Pietermaritzburg South Africa" height="500" width="500" />
 
             <div class="container">
                 <a href="Programs.html" class="btn">Primary Action</a>
                 <a href="Get involed.html" class="btn btn-secondary">Learn More</a>
             </div>
     </section>
-
-     
 
     <!-- Introduction section Only A Software dev Can do such beautiful work -->
     <section>
@@ -70,6 +84,77 @@
         </div>
     </section>
 
+
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Community in Action</h2>
+                <p>See the impact of Ubuntu philosophy in our daily activities and community programs.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="program-card">
+                    <div class="image-container">
+                        <img src="Ubuntu Centre (WEDE Project)/3 . Assets/Images/My team and program pic/Habour.jpg" 
+                             alt="Support group meeting with counselor at Ubuntu Rise Community Hub providing safe space for survivors" 
+                             class="gallery-image">
+                    </div>
+                    <div class="program-content">
+                        <h3>Safe Harbour Support</h3>
+                        <p>A safe space where healing and empowerment happen.</p>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="image-container">
+                        <img src="Ubuntu Centre (WEDE Project)/3 . Assets/Images/My team and program pic/GOTG pic 1.2.jpg" 
+                             alt="Community members sharing nutritious meal together at Ubuntu Rise demonstrating Ubuntu philosophy of togetherness" 
+                             class="gallery-image">
+                    </div>
+                    <div class="program-content">
+                        <h3>Community Meals</h3>
+                        <p>Sharing meals and stories - the heart of Ubuntu.</p>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="image-container">
+                        <img src="Ubuntu Centre (WEDE Project)/3 . Assets/Images/My team and program pic/Image 1.1 GOTG.jpg" 
+                             alt="Volunteers helping with home repairs and gardening services for elderly community members at Ubuntu Rise" 
+                             class="gallery-image">
+                    </div>
+                    <div class="program-content">
+                        <h3>Volunteer Impact</h3>
+                        <p>Our volunteers making a real difference in people's lives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Lightbox Modal with Exit Button -->
+<div id="lightbox-modal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <div class="modal-header">
+            <button class="close-modal" aria-label="Close lightbox">&times;</button>
+            <button class="exit-modal" aria-label="Exit lightbox">Exit</button>
+        </div>
+        <div class="modal-body">
+            <img id="lightbox-image" class="lightbox-image" src="" alt="">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+        <div class="modal-footer">
+            <button class="nav-btn prev-btn" aria-label="Previous image">‹</button>
+            <button class="nav-btn next-btn" aria-label="Next image">›</button>
+        </div>
+    </div>
+</div>
+
+
+
     <!-- Programs preview section -->
     <section>
         <div>
@@ -80,7 +165,7 @@
                     <div>
                         <h3>Golden Years</h3>
                         <p>A day program for seniors offering social activities, gentle exercise classes, shared meals, and assistance with medication management.</p>
-                        <a href="programs.html#golden-years">Learn More</a>
+                        <a href="programs.html#golden-years" class="btn">Learn More</a>
                     </div>
                 </div>
                 <div>
@@ -88,7 +173,7 @@
                     <div>
                         <h3>Safe Harbour</h3>
                         <p>Support for survivors of abuse including crisis intervention, confidential counseling, and empowerment workshops.</p>
-                        <a href="programs.html#safe-harbour">Learn More</a>
+                        <a href="programs.html#safe-harbour" class="btn">Learn More</a>
                     </div>
                 </div>
                 <div>
@@ -96,24 +181,25 @@
                     <div>
                         <h3>Pathfinders</h3>
                         <p>Life skills program helping individuals find direction through practical training and personal development.</p>
-                        <a href="programs.html#pathfinders">Learn More</a>
+                        <a href="programs.html#pathfinders" class="btn">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to action section -->
-    <section>
-        <div>
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
             <h2>Join Us in Making a Difference</h2>
             <p>Whether you want to volunteer, donate, or partner with us, your support helps us continue our vital work in the community.</p>
-            <div>
-                <a href="get-involved.html#volunteer">Volunteer</a>
-                <a href="get-involved.html#donate">Donate</a>
+            <div class="cta-buttons">
+                <a href="Get involed.html#volunteer" class="btn">Volunteer</a>
+                <a href="Get involed.html#donate" class="btn btn-secondary">Donate</a>
             </div>
         </div>
     </section>
+
  
     <!-- Footer -->
     <footer>
@@ -136,3 +222,5 @@
     </footer>
 </body>
 </html>
+
+

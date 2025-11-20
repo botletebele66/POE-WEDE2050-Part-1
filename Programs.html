@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Ubuntu Rise Community Hub</title>
+    <title>Programs - Ubuntu Rise Community Hub</title>
     <!-- This is how you link the Html and CSS pages together--->
     <link href="style.css" rel="stylesheet "/>
-</head>
-<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="script.js"></script>
+
+     <!-- SEO Meta Tags -->
+     <meta name="description" content="Explore our programs: Golden Years for seniors, Safe Harbour for abuse survivors, and Pathfinders for life skills. Free, confidential support available in Pietermaritzburg.">
+     <meta name="keywords" content="Golden Years program, Safe Harbour support, Pathfinders life skills, senior care, abuse survivor support, Pietermaritzburg">
+     <meta name="author" content="Ubuntu Rise Community Hub">
+
+     <!-- Open Graph Meta Tags -->
+     <meta property="og:title" content="Ubuntu Rise Community Hub">
+     <meta property="og:description" content="Our humanity is bound up in each other. We rise together.">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://ubunturise.org.za">
+
+     <!-- Leaflet CSS for Maps -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+ </head>
+ <body>
     <header>
         <div>
            <U> <h1> Ubuntu Rise Community Hub</div>
@@ -24,37 +41,145 @@
         </div>
     </header>
 
-
- <!-- Programs Page -->
+<!-- Programs Page with Search, Filters, and Accordions -->
 <section id="programs" class="page">
-    <h1>Our Programs</h1>
-    
-    <div class="program-card">
-        <h2>Golden Years - Senior Program</h2>
-        <p>Our Golden Years program provides a safe, engaging space for seniors to combat loneliness and maintain an active lifestyle.</p>
-        <h3>Services Include:</h3>
-
-        <a href="#" class="btn nav-link" data-page="involved">Volunteer with Us</a>
-    </div>
-
-    
-    <div class="program-card">
-        <h2>Safe Harbour - Abuse Survivor Support</h2>
-        <p>Our Safe Harbour program provides comprehensive support for survivors of domestic violence and elder abuse.</p>
-        <h3>Services Include:</h3>
+    <div class="container">
+        <h1>Our Programs</h1>
+        <p>Discover our comprehensive programs designed to support and empower our community members.</p>
         
-        <a href="#" class="btn nav-link" data-page="contact">Get Help</a>
-    </div>
-    
-    <div class="program-card">
-        <h2>Pathfinders - Life Skills Program</h2>
-        <p>Our Pathfinders program helps individuals develop the skills needed to regain independence and find focus in life.</p>
-        <h3>Program Components:</h3>
-    
-        <a href="#" class="btn nav-link" data-page="involved">Join the Program</a>
-    </div>
-</section>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search programs...">
+        </div>
         
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Programs</button>
+            <button class="filter-btn" data-filter="seniors">Seniors</button>
+            <button class="filter-btn" data-filter="support">Support</button>
+            <button class="filter-btn" data-filter="development">Development</button>
+        </div>
+        
+        <!-- Program Cards with Accordions -->
+        <div id="programs-container">
+            <div class="program-card animate-on-scroll" data-category="seniors">
+                <h2>Golden Years - Senior Program</h2>
+                <p>Our Golden Years program provides a safe, engaging space for seniors to combat loneliness and maintain an active lifestyle.</p>
+                
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Services Include</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Social Activities:</strong> Group games, arts and crafts, and community gatherings</li>
+                            <li><strong>Gentle Exercise Classes:</strong> Yoga, stretching, and chair exercises</li>
+                            <li><strong>Shared Meals:</strong> Nutritious lunches and social dining experiences</li>
+                            <li><strong>Medication Management:</strong> Assistance with organizing and remembering medications</li>
+                            <li><strong>Transportation:</strong> Help getting to medical appointments</li>
+                            <li><strong>Health Monitoring:</strong> Regular blood pressure checks and wellness assessments</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Schedule & Participation</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p><strong>Program Hours:</strong> Monday-Friday, 8:00 AM - 4:00 PM</p>
+                        <p><strong>Drop-in Welcome:</strong> No appointment necessary</p>
+                        <p><strong>Cost:</strong> Free for all participants</p>
+                        <p><strong>Age Requirement:</strong> 60 years and older</p>
+                    </div>
+                </div>
+                
+                <a href="Get involed.html#volunteer" class="btn">Volunteer with Us</a>
+            </div>
+
+            <div class="program-card animate-on-scroll" data-category="support">
+                <h2>Safe Harbour - Abuse Survivor Support</h2>
+                <p>Our Safe Harbour program provides comprehensive support for survivors of domestic violence and elder abuse.</p>
+                
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Services Include</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>24/7 Crisis Intervention:</strong> Immediate support when you need it most</li>
+                            <li><strong>Confidential Counseling:</strong> One-on-one sessions with trained professionals</li>
+                            <li><strong>Safety Planning:</strong> Creating personalized plans for your protection</li>
+                            <li><strong>Legal Assistance:</strong> Referrals to legal aid and court support</li>
+                            <li><strong>Support Groups:</strong> Connect with others who understand your journey</li>
+                            <li><strong>Empowerment Workshops:</strong> Building confidence and life skills</li>
+                            <li><strong>Temporary Safe Accommodation:</strong> Referrals to safe shelters when needed</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>How to Access Support</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p><strong>Crisis Line:</strong> 0800 786 911 (Available 24/7)</p>
+                        <p><strong>Walk-in Hours:</strong> Monday-Sunday, 24 Hours</p>
+                        <p><strong>Confidentiality:</strong> All services are completely confidential</p>
+                        <p><strong>No Cost:</strong> All services are free of charge</p>
+                        <p class="yellow-bg"><strong>You are not alone.</strong> We believe you, we support you, and we're here to help you heal.</p>
+                    </div>
+                </div>
+                
+                <a href="Contact Us.html" class="btn">Get Help Now</a>
+            </div>
+            
+            <div class="program-card animate-on-scroll" data-category="development">
+                <h2>Pathfinders - Life Skills Program</h2>
+                <p>Our Pathfinders program helps individuals develop the skills needed to regain independence and find focus in life.</p>
+                
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Program Components</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Job Readiness Training:</strong> Resume writing, interview skills, and workplace etiquette</li>
+                            <li><strong>Financial Literacy:</strong> Budgeting, saving, and managing debt</li>
+                            <li><strong>Computer Skills:</strong> Basic to intermediate computer and internet training</li>
+                            <li><strong>Life Skills Workshops:</strong> Cooking, home maintenance, and personal care</li>
+                            <li><strong>Personal Development:</strong> Goal setting, time management, and communication</li>
+                            <li><strong>Mentorship Program:</strong> One-on-one guidance from community mentors</li>
+                            <li><strong>Certificate Programs:</strong> Recognized qualifications in various skills</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Program Details</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p><strong>Duration:</strong> 6-week intensive program with ongoing support</p>
+                        <p><strong>Schedule:</strong> Flexible options - morning, afternoon, or evening classes</p>
+                        <p><strong>Requirements:</strong> Commitment to attend all sessions</p>
+                        <p><strong>Cost:</strong> Free for all participants</p>
+                        <p><strong>Materials:</strong> All learning materials provided</p>
+                        <p><strong>Next Intake:</strong> Programs start monthly - contact us to enroll</p>
+                    </div>
+                </div>
+                
+                <a href="Get involed.html" class="btn">Join the Program</a>
+            </div>
+        </div>
+    </div>
+</section>        
         <footer>
         <div>
             <div>
