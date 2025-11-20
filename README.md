@@ -1,6 +1,7 @@
-# POE-WEDE2050-Part-1
+Ubuntu Rise Community Hub Website
+<img src= "Ubuntu Centre (WEDE Project)/3 . Assets/Images/My Logo pic/Ubuntu rise (1).jpg" alt="Ubuntu Rise Community Hub logo showing the spirit of Ubuntu and community togetherness in Pietermaritzburg South Africa" height="500" width="500" />
+The Logo of the website
 
-This is what my POE Part 1 should be like 
 
 Site Map
 
@@ -59,3 +60,10 @@ This project involves the design and development of a new, comprehensive(It real
 1.  Gift of the Givers Foundation. (2023). Who we are. Retrieved October 25, 2023, from https://giftofthegivers.org/who-we-are/
 2.  Mbigi, L. (2005). *The spirit of African leadership*. In L. Mbigi & J. Maree (Eds.), *Ubuntu: The spirit of African transformation management* (pp. 1-16). Knowledge Resources.
 3.  WordPress.org. (2023). *About WordPress*. Retrieved October 25, 2023, from https://wordpress.org/about/
+
+
+License
+© 2025 Ubuntu Rise Community Hub. All rights reserved.
+This website is created for educational and non-profit purposes.
+
+"Our humanity is bound up in each other. We rise together."
