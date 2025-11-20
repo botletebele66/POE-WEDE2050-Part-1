@@ -1,6 +1,8 @@
 Ubuntu Rise Community Hub Website
-<img src= "Ubuntu Centre (WEDE Project)/3 . Assets/Images/My Logo pic/Ubuntu rise (1).jpg" alt="Ubuntu Rise Community Hub logo showing the spirit of Ubuntu and community togetherness in Pietermaritzburg South Africa" height="500" width="500" />
-The Logo of the website
+
+
+|<img src= "Ubuntu Centre (WEDE Project)/3 . Assets/Images/My Logo pic/Ubuntu rise (1).jpg"                             alt="Ubuntu Rise Community Hub logo showing the spirit of Ubuntu and community togetherness in Pietermaritzburg South Africa"                                                                                                        width="752" height="742" />
+<b>The Logo of the website</b>
 
 
 Site Map
@@ -55,6 +57,148 @@ This project involves the design and development of a new, comprehensive(It real
 *   **Volunteer Management:** A streamlined online application process for potential volunteers.
 *   **Content Management System (CMS):** WordPress backend for easy content updates by staff.
 *   **Contact & Location Information:** Clear details for access and enquiries.
+
+# Changelog for POE part3 
+All notable changes to the Ubuntu Rise Community Hub website will be documented in this file.The format is based on [Keep a Changelog],and this project adheres to [Semantic Versioning].
+
+#### Added - Initial Release
+
+#### Core Pages
+- Created Home.html with hero section and mission statement
+- Created About us.html with organization story and team information
+- Created Programs.html with three core program descriptions
+- Created Get involed.html with volunteer and donation opportunities
+- Created Contact Us.html with contact form and information
+
+#### Interactive Features
+- Implemented accordion components on Programs page for expandable content
+- Added modal/lightbox functionality for image gallery
+- Integrated smooth scrolling navigation across all pages
+- Created search functionality for programs
+- Added filter buttons for program categories
+- Implemented form validation with real-time error messages
+
+#### Maps Integration
+- Integrated Leaflet.js library for interactive maps
+- Added interactive map to Contact Us page
+- Configured map marker with popup information
+- Set coordinates for Pietermaritzburg location (-29.600, 30.379)
+
+#### Forms
+- Created contact form with full validation
+- Developed donation form with multiple payment options
+- Added radio buttons for one-time vs. recurring donations
+- Implemented required field indicators (red asterisks)
+- Added checkbox for terms and conditions
+- Created success/error message displays
+
+#### SEO Optimization
+- Added comprehensive meta tags to all pages
+- Implemented meta keywords for local search optimization
+- Created meta descriptions for each page
+- Added Open Graph tags for social media sharing
+- Optimized image alt text for accessibility and SEO
+- Created robots.txt file for crawler instructions
+- Generated sitemap.xml for search engine indexing
+
+#### Styling & Design
+- Developed custom CSS with CSS variables for consistent theming
+- Implemented Ubuntu color scheme (orange, purple, yellow)
+- Created responsive design for mobile, tablet, and desktop
+- Added hover effects and transitions throughout
+- Designed custom button styles with gradient effects
+- Created accordion styling with expand/collapse animations
+- Added loading states and success messages
+
+#### JavaScript Functionality
+- Wrote accordion toggle functionality
+- Implemented modal open/close handlers
+- Created lightbox gallery for images
+- Added search input filtering
+- Developed filter button category system
+- Implemented form validation functions
+- Created smooth scrolling for anchor links
+- Added map initialization code
+- Implemented dynamic content loading
+- Created scroll animations for elements
+
+#### Assets
+- Added Ubuntu Rise logo image
+- Created placeholder images for gallery 
+- Organized file structure for images
+
+#### Documentation
+- Created README.md with project overview
+- Added setup instructions
+- Documented file structure
+- Listed all features and technical stack
+- Included contact information
+
+### Technical Implementation
+
+#### HTML Structure
+- Used semantic HTML5 elements
+- Implemented proper heading hierarchy
+- Added ARIA labels where needed
+- Created accessible form controls
+- Organized content with div containers
+
+#### CSS Features
+- CSS Grid for responsive layouts
+- Flexbox for component alignment
+- CSS transitions and animations
+- Custom properties (CSS variables)
+- Media queries for responsiveness
+- Print styles for SEO
+
+#### JavaScript Libraries
+- jQuery 3.6.0 for DOM manipulation
+- Leaflet.js 1.7.1 for maps
+- Custom validation functions
+- Event delegation for dynamic content
+
+### Browser Testing
+- Tested on Chrome (latest)
+- Tested on Firefox (latest)
+- Tested on Safari (latest)
+- Tested on Edge (latest)
+- Mobile testing on iOS Safari
+- Mobile testing on Chrome Mobile
+
+### Known Issues
+- Forms submit to demo endpoints (backend integration needed)
+- Gallery images use placeholder paths (need actual images)
+- No actual email sending functionality (requires backend)
+
+### Future Improvements
+- Backend API integration for form submissions
+- Payment gateway integration for donations
+- User authentication system
+- Content management system
+- Blog/news section
+- Event calendar
+- Multilingual support
+
+### Added
+- Basic page structure for all 5 pages
+- Navigation menu
+- Footer with contact information
+- Initial CSS styling
+
+### Changed
+- Updated color scheme to match Ubuntu branding
+
+### Added
+- Project file structure
+- HTML boilerplate for main pages
+- Basic CSS framework
+- jQuery integration
+
+### Added
+- Initial project setup
+- Created repository
+- Basic HTML structure
+- Project planning documentation
 
 ## References
 1.  Gift of the Givers Foundation. (2023). Who we are. Retrieved October 25, 2023, from https://giftofthegivers.org/who-we-are/
