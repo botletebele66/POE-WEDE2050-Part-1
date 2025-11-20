@@ -2,7 +2,7 @@ Ubuntu Rise Community Hub Website
 
 
 |<img src= "Ubuntu Centre (WEDE Project)/3 . Assets/Images/My Logo pic/Ubuntu rise (1).jpg"                             alt="Ubuntu Rise Community Hub logo showing the spirit of Ubuntu and community togetherness in Pietermaritzburg South Africa"                                                                                                        width="752" height="742" />
-<b>The Logo of the website</b>
+The Logo 
 
 
 Site Map
